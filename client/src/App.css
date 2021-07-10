@@ -28,7 +28,7 @@
   cursor:pointer;
 }
 .pessoas {
-  width: 700px;
+  width: 500px;
   height: auto;
   border: 1px solid black;
   margin:10px;
@@ -38,4 +38,12 @@
 .pessoas h3{
   margin:20px;
   font-family:monospace;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .form{
+    align-items: flex-start;
+    justify-content:left;
+  }
 }
