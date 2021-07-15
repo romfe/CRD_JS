@@ -5,6 +5,7 @@ import moment from 'moment';
 
 
 function App() {
+
   const [nome, setNome] = useState("");
   const [rg, setRg] = useState("");
   const [cpf, setCpf] = useState("");
@@ -56,7 +57,7 @@ function App() {
           return <div className="pessoas">
             <h3>Nome: {val.nome}</h3>
             <h3>RG: {val.rg}</h3>
-            <h3>Data de Admissão: {moment(val.data_admissao).format('L')}</h3>
+            <h3>Data de Admissão: {moment(val.data_admissao).format('DD/MM/YYYY')}</h3>
             <div>
               <button onClick={() => { deletarDados(val.id_pessoa) }}>Remover</button>
             </div>
